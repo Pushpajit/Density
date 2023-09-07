@@ -6,6 +6,7 @@ import White from "../../assets/blob white.png";
 import Purple from "../../assets/blob purple.png";
 import Arrow from '../../assets/Arrow Right.svg'
 import Mobile from '../../assets/mobile.svg'
+import { useState } from "react";
 
 
 
@@ -119,6 +120,10 @@ const Title = styled.h1`
 font-size: calc(2rem + 1vw);
 line-height: 1.2;
 padding: 0.5rem 0;
+background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
 `
 const SubText = styled.h5`
 font-size: calc(0.5rem + 0.5vw);
@@ -166,6 +171,23 @@ const MobileSvg = styled.img`
   }
 `;
 const HeroSection = () => {
+  const [click, setClick] = useState(false)
+
+  const ScrollUp = (id, e) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    element.scrollIntoView({
+      behavior: "smooth",
+      block: "end",
+      inline: "nearest",
+    });
+  };
+
+  const handleClick = (id, e) => {
+    setClick(!click);
+    ScrollUp(id, e);
+  }
+
   return (
     <Herosection id="home">
       <Blobs>
@@ -189,7 +211,7 @@ const HeroSection = () => {
           <SubText>
             we help fast growing companies build award winning website
           </SubText>
-          <CTA >
+          <CTA onClick={(e) => handleClick("contact", e)}>
             Get in touch &nbsp;{" "}
             <img src={Arrow} alt="CTA" width="400" height="400" />
           </CTA>

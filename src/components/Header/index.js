@@ -11,7 +11,7 @@ const Headers = styled.header`
   align-items: center;
   padding: 1rem 5rem;
  
-  background: rgba( 53, 53, 63, 0.8 );
+  background: rgba( 53, 53, 63, 0.7 );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 5px );
   -webkit-backdrop-filter: blur( 5px );
@@ -241,7 +241,7 @@ const Header = () => {
     <Headers ref={ref}>
       <Logo>
         <img src={logo} alt="Lorem" />
-        <h3>Lorem</h3>
+        <h3>Density</h3>
       </Logo>
       <Nav>
         <a href="#home" onClick={(e) => handleClick("home", e)}>

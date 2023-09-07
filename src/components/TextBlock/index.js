@@ -42,6 +42,10 @@ const Title = styled.h1`
   font-size: calc(2rem + 1vw);
   line-height: 1.2;
   padding: 0.5rem 0;
+  background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   @media only Screen and (max-width: 48em) {
     font-size: calc(1rem + 1.5vw);
   }
