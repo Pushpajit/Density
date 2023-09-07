@@ -80,22 +80,22 @@ const Testimonials = () => {
       <Carousel>
         <Slider {...settings}>
           <Card
-            text="Babzz has been essential part of our business. I would definatly recommend Babzz"
+            text="DigitalX has been essential part of our business. I would definatly recommend DigitalX"
             name="Jenny (CodeCall)"
             image="avatar-1"
           />
           <Card
-            text="Babzz has been essential part of our business. I would definatly recommend Babzz"
+            text="DigitalX has been essential part of our business. I would definatly recommend DigitalX"
             name="Bob (CodeCall)"
             image="avatar-2"
           />
           <Card
-            text="Babzz has been essential part of our business. I would definatly recommend Babzz"
+            text="DigitalX has been essential part of our business. I would definatly recommend DigitalX"
             name="Cassy (CodeCall)"
             image="avatar-3"
           />
           <Card
-            text="Babzz has been essential part of our business. I would definatly recommend Babzz"
+            text="DigitalX has been essential part of our business. I would definatly recommend DigitalX"
             name="Jenny (CodeCall)"
             image="avatar-4"
           />
